@@ -5,7 +5,7 @@ $(document).ready(function () {
      "Mazinger Z", "Macross", "Gundam ZZ", "Full Metal Panic"];
     function displayTopicGif() {
         $("button").on("click",  function () {
-            debugger
+        
             var topic = $(this).attr("data-topic");
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
                 topic + "&api_key=0s3GhZ60yFQgSvoDZ5rfXYPJB3urUXBN&limit=10";
