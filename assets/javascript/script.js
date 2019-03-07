@@ -8,7 +8,7 @@ $(document).ready(function () {
         
             var topic = $(this).attr("data-topic");
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-                topic + "&api_key=0s3GhZ60yFQgSvoDZ5rfXYPJB3urUXBN&limit=10";
+                topic + "&api_key=0s3GhZ60yFQgSvoDZ5rfXYPJB3urUXBN&limit=10&offset=0&rating=G&lang=en";
             $.ajax({
                 url: queryURL,
                 method: "GET"
